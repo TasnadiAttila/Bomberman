@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomberman</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    <script src="bomb.js"></script>
+    <script src="player.js"></script>
+    <script src="cell.js"></script>
+    <script src="bomberman.js"></script>
+    <script src="powerup.js"></script>
+    <script src="endgame.js"></script>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="game.css">
+    <link href="https://db.onlinewebfonts.com/c/5766327dd1b3e158a9e2942da70d2ebf?family=Pixel-Art+Regular" rel="stylesheet"> 
+</head>
+<body>
+    <div id="P1_container">
+        <h2 class="name"></h2>
+        <img alt="Egyes játékos ikonja.">
+        <div class="health">
+            <div class="hp"></div>
+            <div class="hp"></div>
+            <div class="hp"></div>
+        </div>
+        <h4>Aktív hatások:</h4>
+        <div class="powers">
+
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <div id="P2_container">
+        <h2 class="name"></h2>
+        <img alt="Kettes játékos ikonja.">
+        <div class="health">
+            <div class="hp"></div>
+            <div class="hp"></div>
+            <div class="hp"></div>
+        </div>
+        <h4>Aktiv hatások:</h4>
+        <div class="powers">
+            
+        </div>
+    </div>
+    <img class="controls player1" src="../images/wasd.png" alt="Egyes játékos irányítás.">
+    <img class="controls player2" src="../images/cursors.png" alt="Kettes játékos irányítás.">
+    <div id="endGameContainer" class="endGame">
+        <h1 id="endGameText"></h1>
+        <button id="newGameButton" class="newGame" onclick="redirectToCharacterSelector()">ÚJ JÁTÉK</button>
+        <button id="mainMenuButton" class="mainMenu" onclick="redirectToMainScreen()">FŐMENÜ</button>
+    </div>
+</body>
+</html>

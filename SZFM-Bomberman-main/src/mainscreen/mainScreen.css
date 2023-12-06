@@ -1,0 +1,88 @@
+body {
+    overflow: hidden;
+    margin: 0;
+}
+.gametitle{
+    text-align: center;
+    margin-top: 20rem;
+    font-size: 4rem;
+    text-shadow: 4px 4px 4px black;
+    user-select: none;
+}
+.game,.scoreboard{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    user-select: none;   
+}
+.scoreboard{
+    margin-top: 0.2rem;
+}
+.scoreboardButton{
+    width: 35rem;
+    height: 7rem;
+    cursor: pointer;
+}
+.gameButton{
+    width: 35rem;
+    height: 7rem;
+    cursor: pointer;
+}
+.game:hover,.scoreboard:hover{
+    position: relative;
+    top: -4px;
+    left: -4px;
+    text-shadow: 4px 4px 4px rgb(177, 204, 57);
+}
+button{
+    font-size: 4rem;                                  
+}
+
+img{
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--accent);
+    border-radius: 20%;
+}
+.bugReportContainer{
+    text-align: center;
+}
+.textArea{
+    resize: none;
+    background-color: rgb(221, 216, 216);
+    color: black;
+    font-size: 1.5rem;
+}
+.sendButton {
+    font-size: 3rem;  
+}
+.closeButton {
+    font-size: 2rem;  
+}
+.bugTitle{
+    font-size: 5rem;
+    text-shadow: 4px 4px 4px black;
+    user-select: none;
+    margin-bottom: 1rem;
+}
+.sendButton,.closeButton{
+    border-radius: 1rem;
+}
+
+@media (max-width: 1280px) {
+    .gametitle {
+        font-size: 3rem;
+    }
+    .gameButton, .scoreboardButton{
+        width: 20rem;
+        height: 5rem;
+        font-size: 2rem;
+    }
+    .textArea{
+        width: 50rem;
+        height: 30rem;
+    }
+}
