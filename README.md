@@ -95,16 +95,6 @@ The project provided practical experience with:
 * Working with multiple interacting objects
 * Developing and debugging a larger Java application
 
-## 🚀 Getting Started
-
-Clone the repository:
-
-```bash
-git clone https://github.com/TasnadiAttila/Bomberman.git
-```
-
-Open the project in your preferred Java IDE and run the main application.
-
 ## 📌 Project Status
 
 The project was developed as a university project and represents an implementation of the core Bomberman gameplay concept with a focus on **local PvP gameplay**.
